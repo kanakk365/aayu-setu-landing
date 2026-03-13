@@ -116,7 +116,7 @@ export const MedicationScreen = () => (
         </div>
         <div className="text-right">
           <p className="text-[10px] text-orange-500 font-medium">Used For</p>
-          <p className="text-[11px] text-gray-700 font-medium">Acidity</p>
+          <p className="text-[11px] text-gray-700 font-medium">Diabetes</p>
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@ export const MedicationScreen = () => (
         </div>
         <div className="text-right">
           <p className="text-[10px] text-orange-500 font-medium">Used For</p>
-          <p className="text-[11px] text-gray-700 font-medium">BP</p>
+          <p className="text-[11px] text-gray-700 font-medium">Acidity</p>
         </div>
       </div>
     </div>
@@ -173,7 +173,7 @@ export const AIAyuScreen = () => (
     <div className="pt-12 px-6 pb-4">
       <div className="flex items-center gap-2">
         <ChevronLeft size={24} className="text-gray-900" />
-        <h1 className="text-xl font-bold text-gray-900">Chat with AI - Ayu</h1>
+        <h1 className="text-xl font-bold text-gray-900">Smart AI Assistance</h1>
       </div>
     </div>
 
@@ -718,7 +718,7 @@ const features = [
     topCard: {
       icon: <Bell size={20} />,
       title: "Reminders and Notifications",
-      desc: "Stay on track with timely reminders and and get information on Medication.",
+      desc: "Stay on track with timely reminders and get information on Medication and drug interactions.",
     },
     bottomCard: (
       <div
@@ -817,7 +817,7 @@ const features = [
                 </div>
                 <div className="text-right ml-2">
                   <div className="text-[8px] text-orange-500">Used For</div>
-                  <div className="text-[9px] font-medium">Acidity</div>
+                  <div className="text-[9px] font-medium">Diabetes</div>
                 </div>
               </div>
             </div>
@@ -835,8 +835,8 @@ const features = [
     screenContent: undefined,
     topCard: {
       icon: <Bot size={20} />,
-      title: "Chat with AI",
-      desc: "Ask Questions about your health and get Personalized recommendations",
+      title: "Smart AI Assistance",
+      desc: "Ask Questions about your health and get Personalized recommendations about your health.",
     },
     bottomCard: (
       <div
@@ -851,61 +851,49 @@ const features = [
             <h3 className="text-xl font-medium">Chat with AI - Ayu</h3>
           </div>
           <p className="text-sm opacity-80">
-            Ask questions about your health at ease
+            Ask Questions about your health and get Personalized recommendations about your health
           </p>
         </div>
 
-        <div className="bg-[#5F8D88] md:bg-[#5F8D88]/50 rounded-2xl p-4 h-[220px] relative overflow-hidden flex flex-col justify-end pb-16">
-          {/* Messages */}
-          <div className="space-y-4 w-full">
-            {/* User Message */}
+        <div className="bg-[#5F8D88] md:bg-[#5F8D88]/50 rounded-2xl p-4 h-[280px] relative overflow-hidden flex flex-col justify-end pb-16">
+          {/* Prompt Messages */}
+          <div className="space-y-3 w-full">
+            {/* User Prompt 1 */}
             <div className="flex justify-end items-start gap-2">
-              <div className="bg-[#072D28] text-white text-xs px-4 py-2.5 rounded-2xl rounded-tr-none max-w-[80%]">
-                Can I take Virta daily?
+              <div className="bg-[#072D28] text-white text-[10px] px-4 py-2.5 rounded-2xl rounded-tr-none max-w-[85%]">
+                I have fever and a headache with a cough can you recommend what should I do
               </div>
               <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-[10px] text-white shrink-0 mt-1">
                 J
               </div>
             </div>
 
-            {/* AI Response */}
-            <div className="flex justify-start items-start gap-2">
-              <div className="w-6 h-6 bg-[#3A8177] rounded-full flex items-center justify-center text-[8px] text-white shrink-0 mt-1">
-                AI
+            {/* User Prompt 2 */}
+            <div className="flex justify-end items-start gap-2">
+              <div className="bg-[#072D28] text-white text-[10px] px-4 py-2.5 rounded-2xl rounded-tr-none max-w-[85%]">
+                Use my medical history and tell me what medication causes cough
               </div>
-              <div className="bg-white text-gray-800 text-xs p-3 rounded-2xl rounded-tl-none max-w-[85%] shadow-sm">
-                <div className="font-bold text-[#3A8177] mb-1 text-[10px]">
-                  Ayusetu AI
-                </div>
-                <ul className="list-disc pl-3 space-y-1 text-[10px] leading-relaxed">
-                  <li>
-                    Daily use of Virta depends on its purpose and ingredients
-                  </li>
-                  <li>Some medicines are not meant for long-term daily use</li>
-                  <li>Always follow the doctor&apos;s prescription</li>
-                </ul>
+              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-[10px] text-white shrink-0 mt-1">
+                J
               </div>
             </div>
 
-            {/* User Message 2 */}
-            <div className="flex justify-end items-center gap-2">
-              <div className="bg-[#072D28] text-white text-[10px] px-4 py-2.5 rounded-full">
-                Use My Medical history and respond
+            {/* User Prompt 3 */}
+            <div className="flex justify-end items-start gap-2">
+              <div className="bg-[#072D28] text-white text-[10px] px-4 py-2.5 rounded-2xl rounded-tr-none max-w-[85%]">
+                Analyse my lab reports and suggest recommend health nutrition plan
               </div>
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-[10px] text-white shrink-0">
+              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-[10px] text-white shrink-0 mt-1">
                 J
               </div>
             </div>
           </div>
 
-          {/* Input Placeholer */}
-          <div className="absolute bottom-4 left-4 right-4 bg-white rounded-full px-4 py-2 flex items-center justify-between">
-            <span className="text-[10px] text-gray-400">
-              Ask all the medical doubts...
+          {/* Banner */}
+          <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 flex items-center justify-center gap-2">
+            <span className="text-[10px] text-gray-600 font-medium">
+              AI suggestions - just consult a doctor
             </span>
-            <div className="w-5 h-5 bg-[#3A8177] rounded-full flex items-center justify-center">
-              <ArrowRight size={10} className="text-white" />
-            </div>
           </div>
         </div>
       </div>

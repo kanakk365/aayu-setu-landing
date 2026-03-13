@@ -12,7 +12,7 @@ const ABHAIntegration = () => {
           <div className="flex items-center justify-center gap-4 mb-12 opacity-80">
             <div className="h-[3px] w-24 bg-[linear-gradient(90deg,rgba(65,116,111,0.89)_0%,rgba(117,227,214,0.89)_100%)] opacity-50 rounded-full" />
             <div className="shrink-0 px-6 py-1.5 rounded-full border border-[#3A8177]/30 text-[#3A8177] text-sm font-medium bg-[#ECF6F5]">
-              Track your health
+              Coming Soon
             </div>
             <div className="h-[3px] w-24 bg-[linear-gradient(90deg,rgba(132,255,239,0.89)_0%,rgba(45,100,93,0.89)_100%)] opacity-50 rounded-full" />
           </div>
@@ -30,7 +30,7 @@ const ABHAIntegration = () => {
               </span>
             </div>
             <p className="text-gray-800 font-medium text-lg mb-6">
-              ABHA Integration &mdash; Track your health
+              ABHA Integration
             </p>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
               Seamlessly connect your AyusSetu profile with India&apos;s digital
@@ -160,10 +160,6 @@ const ABHAIntegration = () => {
         {/* Bottom Section */}
         <BlurFade delay={0.4}>
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-[#326a62] mb-10">
-              Track your health
-            </h3>
-
             <p className="text-gray-900 font-medium text-lg">
               This feature is currently under development and will be available
               in an upcoming release
